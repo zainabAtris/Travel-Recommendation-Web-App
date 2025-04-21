@@ -1,0 +1,147 @@
+* {
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+nav{
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position : absolute;
+  width: 100%;
+  z-index: 10;
+}
+.logo{
+  font-size: 24px;
+  font-style: oblique;
+  font-weight: bold;
+  color: #110e0e
+  
+}
+.nav-links{
+  list-style:none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+.search-bar input {
+  padding: 5px 10px;
+}
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #00aaff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+nav button {
+  background-color: black;
+  color: aquamarine;
+  padding:10px 15px;
+  border:none;
+  border-radius:5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+nav button:hover {
+  background-color: #1a1212;
+}
+/* Hero Section */
+.hero {
+  background-image: url('pic3.avif');
+  height: 100vh;
+  background-size: cover;
+  position :relative;
+  background-position: center;
+  display: flex;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.338);
+
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: auto;/* margin: 150px auto 0 auto;*/
+  text-align: center;
+  padding:20px;
+}
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color:#121010;
+  font-size: larger;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+/* Social Icons */
+.social-icons {
+  position: absolute;
+  top:50%;
+  left:20px;
+  transform: translateY(-50%);
+  z-index:2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: bold;
+}
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+/*under search bar
+.nav-container {
+  position:relative;
+  top:3%;
+  left: 45%;
+  transform: translate(-25%, -25%);
+  z-index: 2;
+  display: flex;
+  gap: 90px;
+}*/
+.recommendation-card {
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+.recommendation-card img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
